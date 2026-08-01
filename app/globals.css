@@ -89,6 +89,7 @@ footer{grid-template-columns:1.35fr repeat(4,1fr);gap:36px}
 .footer-social>div{display:flex;flex-wrap:wrap;gap:9px}.footer-social-link{width:36px;height:36px;display:grid;place-items:center;border-radius:50%;background:rgba(255,255,255,.09);color:#fff;transition:background .2s ease,transform .2s ease}.footer-social-link:hover{background:rgba(255,255,255,.2);transform:translateY(-2px)}.footer-social-link:focus-visible{outline:3px solid #fff;outline-offset:3px}.footer-social-link svg{width:17px;height:17px}
 @media(max-width:800px){footer>div.footer-social{display:block;margin-top:26px}.footer-social>div{justify-content:center}}
 @media(max-width:800px){footer .footer-brand{display:flex;flex-direction:column;align-items:center;text-align:center}footer .footer-brand img{display:block;margin:0 0 12px}footer .footer-brand strong{display:block}}
+.hero-actions .pill.teal{transition:transform .22s ease,background-color .22s ease,box-shadow .22s ease}.hero-actions .pill.teal:hover{transform:translateY(-4px) scale(1.02);background:var(--navy);box-shadow:0 12px 28px rgba(8,42,67,.3)}.hero-actions .pill.teal:focus-visible{outline:3px solid var(--teal);outline-offset:4px;transform:translateY(-3px);background:var(--navy);box-shadow:0 10px 24px rgba(8,42,67,.28)}
 .pill.whatsapp{background:#25d366;color:#fff;border-color:#25d366}.pill.whatsapp:hover{background:#1fb857}
 .hero-actions,.location-actions{flex-wrap:wrap}
 footer a svg{display:inline-block;margin-right:6px;vertical-align:-2px}
