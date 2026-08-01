@@ -23,8 +23,8 @@ const branches = [
     name: "Almacén Farmacéutico Pumanque",
     address: "Juan XXIII, N° 80, Pumanque.",
     phone: "+56 9 4057 3428",
-    query: "-34.6002222,-71.6525556",
-    directions: "https://maps.app.goo.gl/EoP6v9FBzsyrfEkD9?g_st=iw",
+    query: "Almacén Farmacéutico Pumanque, Pumanque, Chile",
+    directions: "https://maps.app.goo.gl/WgQkZxFePaZZAEvL9",
   },
 ];
 
