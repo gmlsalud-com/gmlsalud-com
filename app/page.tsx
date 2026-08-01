@@ -33,16 +33,13 @@ export default function Home() {
       </header>
 
       <section className="hero" id="inicio">
-        <div className="hero-photo" role="img" aria-label="Atención cercana en una farmacia moderna" />
-        <div className="hero-content">
-          <span className="eyebrow">Tu salud, más cerca</span>
-          <h1>Cuidamos<br /><em>tu bienestar</em></h1>
-          <p>Atención cercana y profesional, siempre que nos necesites.</p>
-          <div className="actions">
-            <a className="pill teal" href="#sucursales">⌖ Cómo llegar</a>
-            <a className="pill light" href="tel:+56912345678">⌕ Llámanos</a>
-          </div>
-        </div>
+        <img
+          className="hero-reference"
+          src="/hero-gml-salud.png"
+          alt="GML Salud. Cuidamos tu bienestar. Atención cercana y profesional, siempre que nos necesites."
+        />
+        <a className="hero-hotspot hero-hotspot-map" href="#sucursales" aria-label="Cómo llegar" />
+        <a className="hero-hotspot hero-hotspot-phone" href="tel:+56912345678" aria-label="Llámanos" />
       </section>
 
       <section className="intro section" id="nosotros">
