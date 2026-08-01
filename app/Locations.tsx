@@ -31,9 +31,13 @@ const branches = [
 
 export default function Locations() {
   const [selected, setSelected] = useState(0);
+  const [zoomed, setZoomed] = useState(false);
   const branch = branches[selected];
   const query = encodeURIComponent(branch.query);
-  const mapSrc = "embed" in branch ? branch.embed : `https://maps.google.com/maps?q=${query}&z=16&output=embed`;
+  const mapZoom = zoomed ? 20 : (selected === 1 ? 17 : 16);
+  const mapSrc = "embed" in branch && branch.embed
+    ? branch.embed.replace(/z=\d+/, `z=${mapZoom}`)
+    : `https://maps.google.com/maps?q=${query}&z=${mapZoom}&output=embed`;
   const phone = branch.phone.replace(/\s/g, "");
   const whatsapp = branch.phone.replace(/\D/g, "");
 
@@ -48,7 +52,7 @@ export default function Locations() {
               <button
                 className="branch-option"
                 type="button"
-                onClick={() => setSelected(index)}
+                onClick={() => { setSelected(index); setZoomed(false); }}
                 aria-pressed={selected === index}
               >
                 <MapPin className="branch-pin" size={20} aria-hidden="true" />
@@ -74,18 +78,25 @@ export default function Locations() {
           </a>
         )}
         <iframe
-          key={branch.query}
+          key={`${branch.query}-${mapZoom}`}
           title={`Mapa de ${branch.name}`}
           src={mapSrc}
           loading="lazy"
           referrerPolicy="no-referrer-when-downgrade"
           allowFullScreen
         />
-        <div className="map-selected-marker" role="status" aria-live="polite">
+        <button
+          className="map-selected-marker"
+          type="button"
+          onClick={() => setZoomed(true)}
+          aria-label={`Acercar mapa a ${branch.name}`}
+          aria-pressed={zoomed}
+          title="Acercar ubicación"
+        >
           <span className="map-marker-pin"><MapPin size={27} aria-hidden="true" /></span>
           <strong>{branch.name}</strong>
           <small>{branch.address}</small>
-        </div>
+        </button>
       </div>
     </section>
   );
