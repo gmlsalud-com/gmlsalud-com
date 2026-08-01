@@ -83,10 +83,6 @@ export default function Home() {
         <div><h3>Nuestras sucursales</h3><p>Alhué</p><p>La Línea, Alhué</p><p>Pumanque</p></div>
       </footer>
 
-      <div className="mobile-bar">
-        <a href="https://maps.google.com/?q=21+de+Mayo+423+Alhue"><MapPinned size={18} aria-hidden="true" /> Cómo llegar</a>
-        <a href="tel:+56912345678"><Smartphone size={18} aria-hidden="true" /> Llámanos</a>
-      </div>
     </main>
   );
 }

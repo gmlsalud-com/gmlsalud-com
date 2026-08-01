@@ -71,3 +71,4 @@
 .site-header{position:sticky;top:0;z-index:100;box-shadow:0 1px 12px rgba(8,42,67,.06)}
 section[id]{scroll-margin-top:78px}
 @media(max-width:800px){section[id]{scroll-margin-top:76px}}
+@media(max-width:800px){body{padding-bottom:0}.mobile-bar{display:none}}
