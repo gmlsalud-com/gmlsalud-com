@@ -58,7 +58,7 @@ export default function Home() {
         <div className="advice-cards">
           <article><img src="/consejo-medicamentos.jpg" alt="Persona tomando medicamentos con agua" /><div><h3>Cómo usar correctamente los medicamentos</h3><p>Consejos prácticos para obtener el máximo beneficio de tus tratamientos.</p></div></article>
           <article><img src="/consejo-invierno.png" alt="Mujer resfriada usando un pañuelo durante el invierno" /><div><h3>Prevención durante el invierno</h3><p>Recomendaciones para cuidar tu salud en los días fríos.</p></div></article>
-          <article><img src="/consejo-adherencia.jpg" alt="Organizador semanal de medicamentos" /><div><h3>Importancia de la adherencia al tratamiento</h3><p>Seguir tu tratamiento mejora tu calidad de vida.</p></div></article>
+          <article><img src="/consejo-adherencia.png" alt="Manos organizando medicamentos en un pastillero semanal" /><div><h3>Importancia de la adherencia al tratamiento</h3><p>Seguir tu tratamiento mejora tu calidad de vida.</p></div></article>
         </div>
       </section>
 
