@@ -90,5 +90,5 @@ footer{grid-template-columns:1.35fr repeat(4,1fr);gap:36px}
 .pill.whatsapp{background:#25d366;color:#fff;border-color:#25d366}.pill.whatsapp:hover{background:#1fb857}
 .hero-actions,.location-actions{flex-wrap:wrap}
 footer a svg{display:inline-block;margin-right:6px;vertical-align:-2px}
-@media(max-width:800px){.hero-actions .whatsapp{flex-basis:100%}.location-actions .whatsapp{flex-basis:100%}}
+@media(max-width:800px){.hero-actions,.location-actions{flex-direction:column;flex-wrap:nowrap}.hero-actions .pill,.location-actions .pill{width:100%;min-width:100%;flex:0 0 auto}.hero-actions .whatsapp,.location-actions .whatsapp{flex-basis:auto}}
 .brand b{font-family:inherit;font-size:12px;font-weight:800;letter-spacing:0}
