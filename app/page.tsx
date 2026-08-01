@@ -47,9 +47,9 @@ export default function Home() {
         <span className="eyebrow">Consejos de salud</span>
         <h2>Te recomendamos</h2>
         <div className="advice-cards">
-          <article><img src="https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?auto=format&fit=crop&w=1200&q=90" alt="Persona tomando medicamentos con agua" /><div><h3>Cómo usar correctamente los medicamentos</h3><p>Consejos prácticos para obtener el máximo beneficio de tus tratamientos.</p></div></article>
-          <article><img src="https://images.unsplash.com/photo-1542884748-2b87b36c6b90?auto=format&fit=crop&w=1200&q=90" alt="Prevención de enfermedades durante el invierno" /><div><h3>Prevención durante el invierno</h3><p>Recomendaciones para cuidar tu salud en los días fríos.</p></div></article>
-          <article><img src="https://images.unsplash.com/photo-1584634731339-252c581abfc5?auto=format&fit=crop&w=1200&q=90" alt="Organizador semanal de medicamentos" /><div><h3>Importancia de la adherencia al tratamiento</h3><p>Seguir tu tratamiento mejora tu calidad de vida.</p></div></article>
+          <article><img src="/consejo-medicamentos.jpg" alt="Persona tomando medicamentos con agua" /><div><h3>Cómo usar correctamente los medicamentos</h3><p>Consejos prácticos para obtener el máximo beneficio de tus tratamientos.</p></div></article>
+          <article><img src="/consejo-invierno.jpg" alt="Prevención de enfermedades durante el invierno" /><div><h3>Prevención durante el invierno</h3><p>Recomendaciones para cuidar tu salud en los días fríos.</p></div></article>
+          <article><img src="/consejo-adherencia.jpg" alt="Organizador semanal de medicamentos" /><div><h3>Importancia de la adherencia al tratamiento</h3><p>Seguir tu tratamiento mejora tu calidad de vida.</p></div></article>
         </div>
       </section>
 
