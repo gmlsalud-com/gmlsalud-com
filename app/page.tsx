@@ -80,7 +80,7 @@ export default function Home() {
           <div className="purpose-icon" aria-hidden="true"><ShieldCheck size={27} /></div>
           <span>03</span>
           <h2>Valores</h2>
-          <p><strong>Confianza</strong>, innovación y crecimiento sostenible guían cada una de nuestras decisiones.</p>
+          <p>En GML SALUD acercamos productos y soluciones de salud a todos nuestros pacientes. A través de nuestra red de farmacias y almacenes farmacéuticos, ofrecemos atención cercana, precios convenientes, convenios de salud y programas de descuentos con beneficios para nuestros clientes.</p>
         </article>
       </section>
 
@@ -89,7 +89,7 @@ export default function Home() {
       <footer>
         <div className="footer-brand"><img src="/gml-logo.png" alt="" /><strong>GML SALUD</strong><p>Comprometidos con tu bienestar.</p></div>
         <div><h3>Enlaces</h3><a href="#inicio">Inicio</a><a href="#nosotros">Nosotros</a><a href="#servicios">Servicios</a><a href="#sucursales">Sucursales</a></div>
-        <div><h3>Información</h3><a href="tel:+56964179731">+56 9 6417 9731</a><a href="https://wa.me/56964179731" target="_blank" rel="noreferrer"><FaWhatsapp aria-hidden="true" /> WhatsApp</a><p>contacto@gmlsalud.cl</p><p>Lun–Vie 09:00–19:30</p></div>
+        <div><h3>Información</h3><a href="tel:+56964179731">+56964179731</a><a href="https://wa.me/56964179731" target="_blank" rel="noreferrer"><FaWhatsapp aria-hidden="true" /> WhatsApp</a><p>contacto@gmlsalud.cl</p><p>Lun–Vie 09:00–19:30</p></div>
         <div><h3>Nuestras sucursales</h3><p>Alhué</p><p>La Línea, Alhué</p><p>Pumanque</p></div>
         <div className="footer-social"><h3>Síguenos</h3><div>
           {socialLinks.map((social) => (
