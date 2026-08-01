@@ -98,3 +98,4 @@ footer a svg{display:inline-block;margin-right:6px;vertical-align:-2px}
 .brand b{font-family:inherit;font-size:inherit;font-weight:inherit;letter-spacing:inherit}
 .hero-live{height:100%;display:flex;flex-direction:column;justify-content:center;padding-top:48px;padding-bottom:48px}
 @media(max-width:800px){.hero-live{justify-content:flex-end;padding-top:70px;padding-bottom:42px}}
+@media(max-width:800px){.hero{height:650px;min-height:650px;background-position:62% top}.hero-live{padding:250px 14px 34px;background:linear-gradient(0deg,#fff 0%,rgba(255,255,255,.99) 48%,rgba(255,255,255,.94) 60%,rgba(255,255,255,0) 82%)}.hero-live h1{max-width:100%;font-size:39px;line-height:1.02;margin-bottom:18px}}
