@@ -8,19 +8,22 @@ const branches = [
     name: "Farmacias Alhué",
     address: "21 de Mayo 423, Alhué",
     phone: "+56 9 1234 5678",
-    query: "21 de Mayo 423, Alhué, Chile",
+    query: "Farmacias Alhue - 9650034, Alhue, Alhué, Región Metropolitana",
+    directions: "https://maps.app.goo.gl/SsfUV8vhUzAC77U1A?g_st=iw",
   },
   {
     name: "Almacén Farmacéutico La Línea",
     address: "La Línea, Alhué",
     phone: "+56 9 1234 5678",
-    query: "La Línea, Alhué, Chile",
+    query: "-34.0411667,-71.2280000",
+    directions: "https://maps.app.goo.gl/HJ21qbbgv6xqQHPY7?g_st=iw",
   },
   {
     name: "Almacén Farmacéutico Pumanque",
     address: "Pumanque",
     phone: "+56 9 1234 5678",
-    query: "Pumanque, Chile",
+    query: "-34.6002222,-71.6525556",
+    directions: "https://maps.app.goo.gl/EoP6v9FBzsyrfEkD9?g_st=iw",
   },
 ];
 
@@ -55,7 +58,7 @@ export default function Locations() {
           ))}
         </div>
         <div className="location-actions">
-          <a className="pill teal" href={`https://www.google.com/maps/dir/?api=1&destination=${query}`} target="_blank" rel="noreferrer"><MapPinned size={19} aria-hidden="true" /> Cómo llegar</a>
+          <a className="pill teal" href={branch.directions} target="_blank" rel="noreferrer"><MapPinned size={19} aria-hidden="true" /> Cómo llegar</a>
           <a className="pill light" href={`tel:${phone}`}><Smartphone size={19} aria-hidden="true" /> Llámanos</a>
         </div>
       </div>
