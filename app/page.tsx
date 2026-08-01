@@ -28,7 +28,7 @@ export default function Home() {
       <section className="hero" id="inicio">
         <div className="hero-live">
           <h1>Cuidamos<br /><em>tu bienestar</em></h1>
-          <p>Atención cercana y profesional,<br />siempre que nos necesites.</p>
+          <p>Nos ocupamos de tu bienestar</p>
           <div className="hero-actions">
             <a className="pill teal" href="#sucursales"><MapPinned size={19} aria-hidden="true" /> Cómo llegar</a>
             <a className="pill light" href="tel:+56964179731"><Smartphone size={19} aria-hidden="true" /> Llámanos</a>
