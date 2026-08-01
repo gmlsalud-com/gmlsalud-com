@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { MapPin, MapPinned, Smartphone } from "lucide-react";
+import { ExternalLink, MapPin, MapPinned, Smartphone } from "lucide-react";
 import { FaWhatsapp } from "react-icons/fa";
 
 const branches = [
@@ -17,7 +17,8 @@ const branches = [
     address: "La Línea, Alhué",
     phone: "+56 9 8691 1761",
     query: "-34.0411667,-71.2280000",
-    directions: "https://maps.app.goo.gl/HJ21qbbgv6xqQHPY7?g_st=iw",
+    embed: "https://maps.google.com/maps?ll=-34.041141,-71.227973&z=17&output=embed",
+    directions: "https://www.google.com/maps/place/34%C2%B002'28.1%22S+71%C2%B013'40.7%22W/@-34.041141,-71.227973,17z/data=!3m1!4b1!4m4!3m3!8m2!3d-34.041141!4d-71.227973?entry=ttu&g_ep=EgoyMDI2MDcyOS4wIKXMDSoASAFQAw%3D%3D",
   },
   {
     name: "Almacén Farmacéutico Pumanque",
@@ -32,6 +33,7 @@ export default function Locations() {
   const [selected, setSelected] = useState(0);
   const branch = branches[selected];
   const query = encodeURIComponent(branch.query);
+  const mapSrc = "embed" in branch ? branch.embed : `https://maps.google.com/maps?q=${query}&z=16&output=embed`;
   const phone = branch.phone.replace(/\s/g, "");
   const whatsapp = branch.phone.replace(/\D/g, "");
 
@@ -66,10 +68,15 @@ export default function Locations() {
         </div>
       </div>
       <div className="real-map">
+        {selected === 1 && (
+          <a className="map-open-link" href={branch.directions} target="_blank" rel="noreferrer">
+            Abrir Mapa <ExternalLink size={17} aria-hidden="true" />
+          </a>
+        )}
         <iframe
           key={branch.query}
           title={`Mapa de ${branch.name}`}
-          src={`https://maps.google.com/maps?q=${query}&z=16&output=embed`}
+          src={mapSrc}
           loading="lazy"
           referrerPolicy="no-referrer-when-downgrade"
           allowFullScreen
