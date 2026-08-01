@@ -1,54 +1,55 @@
 import Locations from "./Locations";
+import Header from "./Header";
+
+const services = [
+  { icon: "◇", title: "Medicamentos", text: "Amplio stock de medicamentos de marca y genéricos." },
+  { icon: "♡", title: "Orientación farmacéutica", text: "Te asesoramos en el uso correcto de tus medicamentos." },
+  { icon: "♧", title: "Control de presión arterial", text: "Medición gratuita y seguimiento." },
+  { icon: "◫", title: "Vitaminas y suplementos", text: "Encuentra productos para tu bienestar diario." },
+  { icon: "☺", title: "Productos infantiles", text: "Todo lo que tu bebé necesita, en un solo lugar." },
+  { icon: "▣", title: "Cuidado personal", text: "Productos de higiene, belleza y cuidado personal." },
+];
 
 export default function Home() {
   return (
     <main>
-      <header className="site-header">
-        <a className="brand" href="#inicio" aria-label="GML Salud, inicio">
-          <img src="/gml-logo.png" alt="GML" />
-          <span>GML <b>SALUD</b></span>
-        </a>
-        <nav aria-label="Navegación principal">
-          <a href="#inicio">Inicio</a>
-          <a href="#nosotros">Nosotros</a>
-          <a href="#servicios">Servicios</a>
-          <a href="#consejos">Consejos de salud</a>
-          <a href="#sucursales">Sucursales</a>
-        </nav>
-        <a className="pill dark desktop-cta" href="#sucursales">⌖ Cómo llegar</a>
-        <button className="menu" aria-label="Abrir menú">☰</button>
-      </header>
+      <Header />
 
       <section className="hero" id="inicio">
-        <img
-          className="hero-reference"
-          src="/hero-gml-salud.png"
-          alt="GML Salud. Cuidamos tu bienestar. Atención cercana y profesional, siempre que nos necesites."
-        />
-        <a className="hero-hotspot hero-hotspot-map" href="#sucursales" aria-label="Cómo llegar" />
-        <a className="hero-hotspot hero-hotspot-phone" href="tel:+56912345678" aria-label="Llámanos" />
+        <div className="hero-live">
+          <h1>Cuidamos<br /><em>tu bienestar</em></h1>
+          <p>Atención cercana y profesional,<br />siempre que nos necesites.</p>
+          <div className="hero-actions">
+            <a className="pill teal" href="#sucursales">⌖ Cómo llegar</a>
+            <a className="pill light" href="tel:+56912345678">⌕ Llámanos</a>
+          </div>
+        </div>
       </section>
 
-      <section className="about-reference" id="nosotros">
-        <img
-          src="/sobre-nosotros-gml.png"
-          alt="Sobre nosotros. Más cerca de las personas. En GML Salud trabajamos cada día para entregar un servicio farmacéutico de calidad, con orientación profesional y productos confiables para tu salud y la de tu familia."
-        />
+      <section className="about-live" id="nosotros">
+        <div>
+          <span className="eyebrow">Sobre nosotros</span>
+          <h2>Más cerca de las personas</h2>
+          <p>En GML Salud trabajamos cada día para entregar un servicio farmacéutico de calidad, con orientación profesional y productos confiables para tu salud y la de tu familia.</p>
+        </div>
+        <div className="care-icon" aria-hidden="true"><span>+</span>♡</div>
       </section>
 
-      <section className="services-reference" id="servicios">
-        <img
-          src="/servicios-gml.png"
-          alt="Nuestros servicios. Estamos para ayudarte: medicamentos, orientación farmacéutica, control de presión arterial, vitaminas y suplementos, productos infantiles y cuidado personal."
-        />
+      <section className="services-live" id="servicios">
+        <div className="services-heading"><span className="eyebrow">Nuestros servicios</span><h2>Estamos para ayudarte</h2></div>
+        <div className="services-list">
+          {services.map((service) => <article key={service.title}><i aria-hidden="true">{service.icon}</i><h3>{service.title}</h3><p>{service.text}</p></article>)}
+        </div>
       </section>
 
-      <section className="advice-reference" id="consejos">
-        <img
-          src="/consejos-gml.png"
-          alt="Consejos de salud. Te recomendamos: cómo usar correctamente los medicamentos, prevención durante el invierno e importancia de la adherencia al tratamiento."
-        />
-        <span className="advice-link-cover" aria-hidden="true" />
+      <section className="advice-live" id="consejos">
+        <span className="eyebrow">Consejos de salud</span>
+        <h2>Te recomendamos</h2>
+        <div className="advice-cards">
+          <article><img src="https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?auto=format&fit=crop&w=1200&q=90" alt="Persona tomando medicamentos con agua" /><div><h3>Cómo usar correctamente los medicamentos</h3><p>Consejos prácticos para obtener el máximo beneficio de tus tratamientos.</p></div></article>
+          <article><img src="https://images.unsplash.com/photo-1542884748-2b87b36c6b90?auto=format&fit=crop&w=1200&q=90" alt="Prevención de enfermedades durante el invierno" /><div><h3>Prevención durante el invierno</h3><p>Recomendaciones para cuidar tu salud en los días fríos.</p></div></article>
+          <article><img src="https://images.unsplash.com/photo-1584634731339-252c581abfc5?auto=format&fit=crop&w=1200&q=90" alt="Organizador semanal de medicamentos" /><div><h3>Importancia de la adherencia al tratamiento</h3><p>Seguir tu tratamiento mejora tu calidad de vida.</p></div></article>
+        </div>
       </section>
 
       <section className="purpose-modern" aria-label="Misión, visión y valores">
