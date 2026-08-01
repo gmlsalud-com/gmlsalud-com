@@ -1,17 +1,4 @@
-const services = [
-  { icon: "✚", title: "Medicamentos", text: "Amplia variedad de medicamentos y genéricos." },
-  { icon: "♡", title: "Orientación farmacéutica", text: "Te ayudamos a resolver tus dudas." },
-  { icon: "♧", title: "Control de presión arterial", text: "Monitoreo rápido y seguro." },
-  { icon: "◒", title: "Vitaminas y suplementos", text: "Soluciones para sentirte mejor." },
-  { icon: "☆", title: "Productos infantiles", text: "Todo para el cuidado de los más pequeños." },
-  { icon: "♙", title: "Cuidado personal", text: "Higiene, prevención y bienestar." },
-];
-
-const branches = [
-  { name: "Farmacias Alhué", address: "21 de Mayo 423, Alhué", phone: "+56 9 1234 5678" },
-  { name: "Almacén Farmacéutico La Línea", address: "La Línea, Alhué", phone: "+56 9 1234 5678" },
-  { name: "Almacén Farmacéutico Pumanque", address: "Pumanque", phone: "+56 9 1234 5678" },
-];
+import Locations from "./Locations";
 
 export default function Home() {
   return (
@@ -42,76 +29,50 @@ export default function Home() {
         <a className="hero-hotspot hero-hotspot-phone" href="tel:+56912345678" aria-label="Llámanos" />
       </section>
 
-      <section className="intro section" id="nosotros">
-        <div>
-          <span className="eyebrow">Sobre nosotros</span>
-          <h2>Más cerca de las personas</h2>
-          <p>En GML Salud trabajamos cada día para entregar un servicio farmacéutico de calidad, con atención profesional y productos confiables para tu salud y la de tu familia.</p>
-        </div>
-        <div className="care-mark" aria-hidden="true">♧<span>♡</span></div>
+      <section className="about-reference" id="nosotros">
+        <img
+          src="/sobre-nosotros-gml.png"
+          alt="Sobre nosotros. Más cerca de las personas. En GML Salud trabajamos cada día para entregar un servicio farmacéutico de calidad, con orientación profesional y productos confiables para tu salud y la de tu familia."
+        />
       </section>
 
-      <section className="purpose section">
-        <article><span>01</span><h3>Misión</h3><p>Mejorar la salud y calidad de vida de las personas, facilitando el acceso a medicamentos, productos y soluciones de bienestar, especialmente en comunas con menor disponibilidad.</p></article>
-        <article><span>02</span><h3>Visión</h3><p>Ser una red referente en salud y bienestar, reconocida por acercar soluciones de calidad, creciendo de manera cercana y sostenible.</p></article>
-        <article><span>03</span><h3>Valores</h3><p><b>Confianza</b>, innovación y crecimiento sostenible guían cada una de nuestras decisiones.</p></article>
+      <section className="services-reference" id="servicios">
+        <img
+          src="/servicios-gml.png"
+          alt="Nuestros servicios. Estamos para ayudarte: medicamentos, orientación farmacéutica, control de presión arterial, vitaminas y suplementos, productos infantiles y cuidado personal."
+        />
       </section>
 
-      <section className="services section" id="servicios">
-        <div className="center-title">
-          <span className="eyebrow">Nuestros servicios</span>
-          <h2>Estamos para ayudarte</h2>
-          <p>Una atención integral pensada para ti y tu familia.</p>
-        </div>
-        <div className="service-grid">
-          {services.map((item) => (
-            <article key={item.title}>
-              <i aria-hidden="true">{item.icon}</i>
-              <h3>{item.title}</h3>
-              <p>{item.text}</p>
-            </article>
-          ))}
-        </div>
+      <section className="advice-reference" id="consejos">
+        <img
+          src="/consejos-gml.png"
+          alt="Consejos de salud. Te recomendamos: cómo usar correctamente los medicamentos, prevención durante el invierno e importancia de la adherencia al tratamiento."
+        />
+        <span className="advice-link-cover" aria-hidden="true" />
       </section>
 
-      <section className="products section">
-        <div className="product-photo" />
-        <div>
-          <span className="eyebrow">Productos y beneficios</span>
-          <h2>Soluciones confiables para tu cuidado diario</h2>
-          <p>Ofrecemos medicamentos, cuidado personal, higiene, prevención, bienestar e insumos. Complementamos nuestra oferta con orientación personalizada, convenios de salud y programas de descuentos para clientes inscritos.</p>
-          <a className="text-link" href="#sucursales">Conoce nuestras sucursales →</a>
-        </div>
+      <section className="purpose-modern" aria-label="Misión, visión y valores">
+        <article>
+          <div className="purpose-icon" aria-hidden="true">⌖</div>
+          <span>01</span>
+          <h2>Misión</h2>
+          <p>Mejorar la salud y calidad de vida de las personas, facilitando el acceso a medicamentos, productos y soluciones de bienestar, especialmente en comunas con menor disponibilidad.</p>
+        </article>
+        <article>
+          <div className="purpose-icon" aria-hidden="true">◉</div>
+          <span>02</span>
+          <h2>Visión</h2>
+          <p>Ser una red referente en salud y bienestar, reconocida por acercar soluciones de calidad, creciendo de manera cercana y sostenible.</p>
+        </article>
+        <article>
+          <div className="purpose-icon" aria-hidden="true">✦</div>
+          <span>03</span>
+          <h2>Valores</h2>
+          <p><strong>Confianza</strong>, innovación y crecimiento sostenible guían cada una de nuestras decisiones.</p>
+        </article>
       </section>
 
-      <section className="advice section" id="consejos">
-        <div className="section-heading">
-          <div><span className="eyebrow">Consejos de salud</span><h2>Te recomendamos</h2></div>
-          <a href="#servicios">Ver todos los consejos →</a>
-        </div>
-        <div className="cards">
-          <article><div className="card-image pills" /><div><small>Uso responsable</small><h3>Cómo usar correctamente los medicamentos</h3><p>Consejos prácticos para obtener el máximo beneficio de tus tratamientos.</p><a href="#servicios">Leer más →</a></div></article>
-          <article><div className="card-image winter" /><div><small>Prevención</small><h3>Cuídate durante el invierno</h3><p>Recomendaciones para cuidar tu salud durante los meses más fríos.</p><a href="#servicios">Leer más →</a></div></article>
-          <article><div className="card-image children" /><div><small>Bienestar</small><h3>La importancia de la adherencia</h3><p>Sigue tu tratamiento de forma segura con acompañamiento profesional.</p><a href="#servicios">Leer más →</a></div></article>
-        </div>
-      </section>
-
-      <section className="locations section" id="sucursales">
-        <div className="location-info">
-          <span className="eyebrow">Visítanos</span>
-          <h2>Estamos aquí para ti</h2>
-          {branches.map((branch) => (
-            <article key={branch.name}>
-              <i>⌖</i><div><h3>{branch.name}</h3><p>{branch.address}</p><a href={`tel:${branch.phone.replace(/\s/g, "")}`}>{branch.phone}</a></div>
-            </article>
-          ))}
-          <div className="actions">
-            <a className="pill teal" href="https://maps.google.com/?q=21+de+Mayo+423+Alhue">⌖ Cómo llegar</a>
-            <a className="pill light" href="tel:+56912345678">⌕ Llámanos</a>
-          </div>
-        </div>
-        <div className="map" aria-label="Mapa referencial de sucursales"><span>●</span><b>GML Salud</b></div>
-      </section>
+      <Locations />
 
       <footer>
         <div className="footer-brand"><img src="/gml-logo.png" alt="" /><strong>GML SALUD</strong><p>Comprometidos con tu bienestar.</p></div>
