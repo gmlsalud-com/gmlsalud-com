@@ -39,7 +39,7 @@ export default function Home() {
         <div>
           <span className="eyebrow">Sobre nosotros</span>
           <h2>Más cerca de las personas</h2>
-          <p>En GML Salud trabajamos cada día para entregar un servicio farmacéutico de calidad, con orientación profesional y productos confiables para tu salud y la de tu familia.</p>
+          <p>En GML SALUD acercamos productos y soluciones de salud a todos nuestros pacientes. A través de nuestra red de farmacias y almacenes farmacéuticos, ofrecemos atención cercana, precios convenientes, convenios de salud y programas de descuentos con beneficios para nuestros clientes.</p>
         </div>
         <div className="care-icon-vector" role="img" aria-label="Manos cuidando un corazón con símbolo de salud"><HeartHandshake aria-hidden="true" /></div>
       </section>
