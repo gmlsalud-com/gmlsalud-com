@@ -2,7 +2,6 @@
 
 import { useState } from "react";
 import { MapPin, MapPinned, Smartphone } from "lucide-react";
-import { FaFacebookF, FaInstagram } from "react-icons/fa";
 
 const branches = [
   {
@@ -10,23 +9,18 @@ const branches = [
     address: "21 de Mayo 423, Alhué",
     phone: "+56 9 1234 5678",
     query: "21 de Mayo 423, Alhué, Chile",
-    facebook: "https://www.facebook.com/share/1DbT8CHWd3/?mibextid=wwXIfr",
-    instagram: "https://www.instagram.com/farmacia_alhue?igsh=MXV2ZWl5c3R6aWdhZg==",
   },
   {
     name: "Almacén Farmacéutico La Línea",
     address: "La Línea, Alhué",
     phone: "+56 9 1234 5678",
     query: "La Línea, Alhué, Chile",
-    instagram: "https://www.instagram.com/aflalinea?igsh=MTN1M2xsdngyZWljcg==",
   },
   {
     name: "Almacén Farmacéutico Pumanque",
     address: "Pumanque",
     phone: "+56 9 1234 5678",
     query: "Pumanque, Chile",
-    facebook: "https://www.facebook.com/share/1Jco2qwWk/?mibextid=wwXIfr",
-    instagram: "https://www.instagram.com/afpumanque?igsh=MTV2dmprYzdxYmN1OQ==",
   },
 ];
 
@@ -57,10 +51,6 @@ export default function Locations() {
                   <small>{item.phone}</small>
                 </span>
               </button>
-              <div className="branch-social" aria-label={`Redes sociales de ${item.name}`}>
-                {item.facebook && <a className="social-link facebook" href={item.facebook} target="_blank" rel="noreferrer" aria-label={`Facebook de ${item.name}`}><FaFacebookF aria-hidden="true" /></a>}
-                {item.instagram && <a className="social-link instagram" href={item.instagram} target="_blank" rel="noreferrer" aria-label={`Instagram de ${item.name}`}><FaInstagram aria-hidden="true" /></a>}
-              </div>
             </div>
           ))}
         </div>

@@ -1,6 +1,7 @@
 import Locations from "./Locations";
 import Header from "./Header";
 import { Eye, HeartPulse, MapPinned, ShieldCheck, Smartphone } from "lucide-react";
+import { FaFacebookF, FaInstagram } from "react-icons/fa";
 
 const services = [
   { icon: 1, title: "Medicamentos", text: "Amplio stock de medicamentos de marca y genéricos." },
@@ -9,6 +10,14 @@ const services = [
   { icon: 4, title: "Vitaminas y suplementos", text: "Encuentra productos para tu bienestar diario." },
   { icon: 5, title: "Productos infantiles", text: "Todo lo que tu bebé necesita, en un solo lugar." },
   { icon: 6, title: "Cuidado personal", text: "Productos de higiene, belleza y cuidado personal." },
+];
+
+const socialLinks = [
+  { network: "Facebook", branch: "Farmacias Alhué", href: "https://www.facebook.com/share/1DbT8CHWd3/?mibextid=wwXIfr", icon: "facebook" },
+  { network: "Instagram", branch: "Farmacias Alhué", href: "https://www.instagram.com/farmacia_alhue?igsh=MXV2ZWl5c3R6aWdhZg==", icon: "instagram" },
+  { network: "Instagram", branch: "La Línea", href: "https://www.instagram.com/aflalinea?igsh=MTN1M2xsdngyZWljcg==", icon: "instagram" },
+  { network: "Facebook", branch: "Pumanque", href: "https://www.facebook.com/share/1Jco2qwWk/?mibextid=wwXIfr", icon: "facebook" },
+  { network: "Instagram", branch: "Pumanque", href: "https://www.instagram.com/afpumanque?igsh=MTV2dmprYzdxYmN1OQ==", icon: "instagram" },
 ];
 
 export default function Home() {
@@ -23,6 +32,16 @@ export default function Home() {
           <div className="hero-actions">
             <a className="pill teal" href="#sucursales"><MapPinned size={19} aria-hidden="true" /> Cómo llegar</a>
             <a className="pill light" href="tel:+56912345678"><Smartphone size={19} aria-hidden="true" /> Llámanos</a>
+          </div>
+          <div className="hero-social" aria-label="Redes sociales de GML Salud">
+            <span>Síguenos</span>
+            <div>
+              {socialLinks.map((social) => (
+                <a className={`social-link ${social.icon}`} href={social.href} target="_blank" rel="noreferrer" aria-label={`${social.network} de ${social.branch}`} title={`${social.network} · ${social.branch}`} key={`${social.network}-${social.branch}`}>
+                  {social.icon === "facebook" ? <FaFacebookF aria-hidden="true" /> : <FaInstagram aria-hidden="true" />}
+                </a>
+              ))}
+            </div>
           </div>
         </div>
       </section>
