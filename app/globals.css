@@ -42,8 +42,13 @@
 .branch-option small{margin:4px 0;color:#526b7a;font-size:15px}
 .location-actions{display:flex;gap:16px;margin-top:34px}
 .location-actions .pill{min-width:170px;padding:14px 24px;font-size:15px}
-.real-map{min-height:600px;overflow:hidden;background:#eaf1ef}
+.real-map{position:relative;min-height:600px;overflow:hidden;background:#eaf1ef}
 .real-map iframe{display:block;width:100%;height:100%;min-height:600px;border:0}
+.map-selected-marker{position:absolute;left:50%;top:50%;display:flex;flex-direction:column;align-items:center;min-width:230px;padding:18px 20px 15px;transform:translate(-50%,-20%);border:1px solid rgba(0,148,143,.25);border-radius:10px;background:#fff;color:var(--navy);box-shadow:0 14px 36px rgba(8,42,67,.24);text-align:center;pointer-events:none}
+.map-selected-marker::after{content:"";position:absolute;left:50%;bottom:-10px;width:18px;height:18px;transform:translateX(-50%) rotate(45deg);border-right:1px solid rgba(0,148,143,.25);border-bottom:1px solid rgba(0,148,143,.25);background:#fff}
+.map-marker-pin{position:absolute;left:50%;top:-46px;width:48px;height:48px;display:grid;place-items:center;transform:translateX(-50%);border:4px solid #fff;border-radius:50% 50% 50% 0;background:var(--teal);color:#fff;box-shadow:0 8px 20px rgba(8,42,67,.24);rotate:-45deg}
+.map-marker-pin svg{rotate:45deg;stroke-width:2.4}
+.map-selected-marker strong{font-size:17px}.map-selected-marker small{margin-top:5px;color:#526b7a;font-size:14px}
 @media(max-width:900px){.location-selector{grid-template-columns:1fr;gap:28px;padding:52px 20px}.location-panel h2{font-size:34px}.real-map,.real-map iframe{min-height:380px}.location-actions .pill{min-width:0;flex:1;padding:13px 10px}}
 
 /* Crisp, live-content sections replace low-resolution screenshot artwork. */

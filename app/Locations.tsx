@@ -8,19 +8,19 @@ const branches = [
     name: "Farmacias Alhué",
     address: "21 de Mayo 423, Alhué",
     phone: "+56 9 1234 5678",
-    query: "Farmacias Alhué, 21 de Mayo 423, Alhué, Chile",
+    query: "21 de Mayo 423, Alhué, Chile",
   },
   {
     name: "Almacén Farmacéutico La Línea",
     address: "La Línea, Alhué",
     phone: "+56 9 1234 5678",
-    query: "Almacén Farmacéutico La Línea, Alhué, Chile",
+    query: "La Línea, Alhué, Chile",
   },
   {
     name: "Almacén Farmacéutico Pumanque",
     address: "Pumanque",
     phone: "+56 9 1234 5678",
-    query: "Almacén Farmacéutico Pumanque, Chile",
+    query: "Pumanque, Chile",
   },
 ];
 
@@ -62,11 +62,16 @@ export default function Locations() {
         <iframe
           key={branch.query}
           title={`Mapa de ${branch.name}`}
-          src={`https://www.google.com/maps?q=${query}&output=embed`}
+          src={`https://maps.google.com/maps?q=${query}&z=16&output=embed`}
           loading="lazy"
           referrerPolicy="no-referrer-when-downgrade"
           allowFullScreen
         />
+        <div className="map-selected-marker" role="status" aria-live="polite">
+          <span className="map-marker-pin"><MapPin size={27} aria-hidden="true" /></span>
+          <strong>{branch.name}</strong>
+          <small>{branch.address}</small>
+        </div>
       </div>
     </section>
   );
