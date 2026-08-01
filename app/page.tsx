@@ -1,6 +1,6 @@
 import Locations from "./Locations";
 import Header from "./Header";
-import { Baby, Eye, HeartHandshake, HeartPulse, MapPinned, Pill, PillBottle, ShieldCheck, ShieldPlus, ShoppingBag, Smartphone, Sparkles } from "lucide-react";
+import { Baby, Compass, HeartHandshake, HeartPulse, MapPinned, Pill, PillBottle, ShieldCheck, ShieldPlus, ShoppingBag, Smartphone, Sparkles } from "lucide-react";
 import { FaFacebookF, FaInstagram, FaWhatsapp } from "react-icons/fa";
 
 const services = [
@@ -71,7 +71,7 @@ export default function Home() {
           <p>Mejorar la salud y calidad de vida de las personas, facilitando el acceso a medicamentos, productos y soluciones de bienestar, especialmente en comunas con menor disponibilidad.</p>
         </article>
         <article>
-          <div className="purpose-icon" aria-hidden="true"><Eye size={27} /></div>
+          <div className="purpose-icon" aria-hidden="true"><Compass size={27} /></div>
           <span>02</span>
           <h2>Visión</h2>
           <p>Ser una red referente en salud y bienestar, reconocida por acercar soluciones de calidad, creciendo de manera cercana y sostenible.</p>
