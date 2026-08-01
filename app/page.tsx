@@ -1,6 +1,6 @@
 import Locations from "./Locations";
 import Header from "./Header";
-import { Baby, Eye, HeartHandshake, HeartPulse, MapPinned, Pill, PillBottle, ShieldCheck, Smartphone, Sparkles } from "lucide-react";
+import { Baby, Eye, HeartHandshake, HeartPulse, MapPinned, Pill, PillBottle, ShieldCheck, ShoppingBag, Smartphone, Sparkles } from "lucide-react";
 import { FaFacebookF, FaInstagram, FaWhatsapp } from "react-icons/fa";
 
 const services = [
@@ -9,6 +9,7 @@ const services = [
   { icon: PillBottle, title: "Vitaminas y suplementos", text: "Encuentra productos para tu bienestar diario." },
   { icon: Baby, title: "Productos infantiles", text: "Todo lo que tu bebé necesita, en un solo lugar." },
   { icon: Sparkles, title: "Cuidado personal", text: "Productos de higiene, belleza y cuidado personal." },
+  { icon: ShoppingBag, title: "Todo lo que necesitas", text: "Soluciones pensadas para cuidar tu salud y bienestar." },
 ];
 
 const socialLinks = [
