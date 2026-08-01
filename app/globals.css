@@ -62,3 +62,6 @@
 .pill svg,.mobile-bar svg{flex:0 0 auto;stroke-width:2.2}
 .mobile-bar a{gap:8px}
 @media(max-width:800px){.hero{background-position:88% center}}
+.site-header{position:sticky;top:0;z-index:100;box-shadow:0 1px 12px rgba(8,42,67,.06)}
+section[id]{scroll-margin-top:78px}
+@media(max-width:800px){section[id]{scroll-margin-top:76px}}
