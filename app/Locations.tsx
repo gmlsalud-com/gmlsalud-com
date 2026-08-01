@@ -9,8 +9,8 @@ const branches = [
     name: "Farmacias Alhué",
     address: "21 de Mayo 423, Alhué",
     phone: "+56 9 6417 9731",
-    query: "-34.0320085,-71.1005295",
-    directions: "https://maps.app.goo.gl/QufCTLZSAeQmfFFS9",
+    query: "Farmacias Alhue, Alhué, Región Metropolitana, Chile",
+    directions: "https://maps.app.goo.gl/3tkZgS4eCXT8eLjU6",
   },
   {
     name: "Almacén Farmacéutico La Línea",

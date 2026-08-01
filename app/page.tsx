@@ -30,7 +30,7 @@ export default function Home() {
           <h1>Cuidamos<br /><em>tu bienestar</em></h1>
           <p>Nos ocupamos de tu bienestar</p>
           <div className="hero-actions">
-            <a className="pill teal" href="https://maps.app.goo.gl/QufCTLZSAeQmfFFS9" target="_blank" rel="noreferrer"><MapPinned size={19} aria-hidden="true" /> Cómo llegar</a>
+            <a className="pill teal" href="https://maps.app.goo.gl/3tkZgS4eCXT8eLjU6" target="_blank" rel="noreferrer"><MapPinned size={19} aria-hidden="true" /> Cómo llegar</a>
             <a className="pill light" href="tel:+56964179731"><Smartphone size={19} aria-hidden="true" /> Llámanos</a>
             <a className="pill whatsapp" href="https://wa.me/56964179731" target="_blank" rel="noreferrer"><FaWhatsapp size={19} aria-hidden="true" /> WhatsApp</a>
           </div>
