@@ -1,6 +1,6 @@
 import Locations from "./Locations";
 import Header from "./Header";
-import { MapPinned, Smartphone } from "lucide-react";
+import { Eye, HeartPulse, MapPinned, ShieldCheck, Smartphone } from "lucide-react";
 
 const services = [
   { icon: 1, title: "Medicamentos", text: "Amplio stock de medicamentos de marca y genéricos." },
@@ -55,19 +55,19 @@ export default function Home() {
 
       <section className="purpose-modern" aria-label="Misión, visión y valores">
         <article>
-          <div className="purpose-icon" aria-hidden="true">⌖</div>
+          <div className="purpose-icon" aria-hidden="true"><HeartPulse size={27} /></div>
           <span>01</span>
           <h2>Misión</h2>
           <p>Mejorar la salud y calidad de vida de las personas, facilitando el acceso a medicamentos, productos y soluciones de bienestar, especialmente en comunas con menor disponibilidad.</p>
         </article>
         <article>
-          <div className="purpose-icon" aria-hidden="true">◉</div>
+          <div className="purpose-icon" aria-hidden="true"><Eye size={27} /></div>
           <span>02</span>
           <h2>Visión</h2>
           <p>Ser una red referente en salud y bienestar, reconocida por acercar soluciones de calidad, creciendo de manera cercana y sostenible.</p>
         </article>
         <article>
-          <div className="purpose-icon" aria-hidden="true">✦</div>
+          <div className="purpose-icon" aria-hidden="true"><ShieldCheck size={27} /></div>
           <span>03</span>
           <h2>Valores</h2>
           <p><strong>Confianza</strong>, innovación y crecimiento sostenible guían cada una de nuestras decisiones.</p>
