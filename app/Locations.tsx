@@ -9,7 +9,7 @@ const branches = [
     name: "Farmacias Alhué",
     address: "21 de Mayo 423, Alhué",
     phone: "+56 9 6417 9731",
-    query: "Farmacias Alhue - 9650034, Alhue, Alhué, Región Metropolitana",
+    query: "-34.0320085,-71.1005295",
     directions: "https://maps.app.goo.gl/QufCTLZSAeQmfFFS9",
   },
   {
