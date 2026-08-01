@@ -1,7 +1,7 @@
 import Locations from "./Locations";
 import Header from "./Header";
 import { Eye, HeartPulse, MapPinned, ShieldCheck, Smartphone } from "lucide-react";
-import { FaFacebookF, FaInstagram } from "react-icons/fa";
+import { FaFacebookF, FaInstagram, FaWhatsapp } from "react-icons/fa";
 
 const services = [
   { icon: 1, title: "Medicamentos", text: "Amplio stock de medicamentos de marca y genéricos." },
@@ -31,7 +31,8 @@ export default function Home() {
           <p>Atención cercana y profesional,<br />siempre que nos necesites.</p>
           <div className="hero-actions">
             <a className="pill teal" href="#sucursales"><MapPinned size={19} aria-hidden="true" /> Cómo llegar</a>
-            <a className="pill light" href="tel:+56912345678"><Smartphone size={19} aria-hidden="true" /> Llámanos</a>
+            <a className="pill light" href="tel:+56964179731"><Smartphone size={19} aria-hidden="true" /> Llámanos</a>
+            <a className="pill whatsapp" href="https://wa.me/56964179731" target="_blank" rel="noreferrer"><FaWhatsapp size={19} aria-hidden="true" /> WhatsApp</a>
           </div>
         </div>
       </section>
@@ -88,7 +89,7 @@ export default function Home() {
       <footer>
         <div className="footer-brand"><img src="/gml-logo.png" alt="" /><strong>GML SALUD</strong><p>Comprometidos con tu bienestar.</p></div>
         <div><h3>Enlaces</h3><a href="#inicio">Inicio</a><a href="#nosotros">Nosotros</a><a href="#servicios">Servicios</a><a href="#sucursales">Sucursales</a></div>
-        <div><h3>Información</h3><p>+56 9 1234 5678</p><p>contacto@gmlsalud.cl</p><p>Lun–Vie 09:00–19:30</p></div>
+        <div><h3>Información</h3><a href="tel:+56964179731">+56 9 6417 9731</a><a href="https://wa.me/56964179731" target="_blank" rel="noreferrer"><FaWhatsapp aria-hidden="true" /> WhatsApp</a><p>contacto@gmlsalud.cl</p><p>Lun–Vie 09:00–19:30</p></div>
         <div><h3>Nuestras sucursales</h3><p>Alhué</p><p>La Línea, Alhué</p><p>Pumanque</p></div>
         <div className="footer-social"><h3>Síguenos</h3><div>
           {socialLinks.map((social) => (
