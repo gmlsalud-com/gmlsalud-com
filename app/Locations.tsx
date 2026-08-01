@@ -8,21 +8,21 @@ const branches = [
   {
     name: "Farmacias Alhué",
     address: "21 de Mayo 423, Alhué",
-    phone: "+56964179731",
+    phone: "+56 9 6417 9731",
     query: "Farmacias Alhue - 9650034, Alhue, Alhué, Región Metropolitana",
     directions: "https://maps.app.goo.gl/SsfUV8vhUzAC77U1A?g_st=iw",
   },
   {
     name: "Almacén Farmacéutico La Línea",
     address: "La Línea, Alhué",
-    phone: "+56964179731",
+    phone: "+56 9 8691 1761",
     query: "-34.0411667,-71.2280000",
     directions: "https://maps.app.goo.gl/HJ21qbbgv6xqQHPY7?g_st=iw",
   },
   {
     name: "Almacén Farmacéutico Pumanque",
-    address: "Pumanque",
-    phone: "+56964179731",
+    address: "Juan XXIII, N° 80, Pumanque.",
+    phone: "+56 9 4057 3428",
     query: "-34.6002222,-71.6525556",
     directions: "https://maps.app.goo.gl/EoP6v9FBzsyrfEkD9?g_st=iw",
   },
@@ -33,6 +33,7 @@ export default function Locations() {
   const branch = branches[selected];
   const query = encodeURIComponent(branch.query);
   const phone = branch.phone.replace(/\s/g, "");
+  const whatsapp = branch.phone.replace(/\D/g, "");
 
   return (
     <section className="location-selector" id="sucursales">
@@ -61,7 +62,7 @@ export default function Locations() {
         <div className="location-actions">
           <a className="pill teal" href={branch.directions} target="_blank" rel="noreferrer"><MapPinned size={19} aria-hidden="true" /> Cómo llegar</a>
           <a className="pill light" href={`tel:${phone}`}><Smartphone size={19} aria-hidden="true" /> Llámanos</a>
-          <a className="pill whatsapp" href="https://wa.me/56964179731" target="_blank" rel="noreferrer"><FaWhatsapp size={19} aria-hidden="true" /> WhatsApp</a>
+          <a className="pill whatsapp" href={`https://wa.me/${whatsapp}`} target="_blank" rel="noreferrer"><FaWhatsapp size={19} aria-hidden="true" /> WhatsApp</a>
         </div>
       </div>
       <div className="real-map">
