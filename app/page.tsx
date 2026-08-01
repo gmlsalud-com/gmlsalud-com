@@ -27,6 +27,7 @@ export default function Home() {
 
       <section className="hero" id="inicio">
         <div className="hero-live">
+          <h1>Nos ocupamos<br /><em>de tu bienestar</em></h1>
           <div className="hero-actions">
             <a className="pill teal" href="https://maps.app.goo.gl/3tkZgS4eCXT8eLjU6" target="_blank" rel="noreferrer"><MapPinned size={19} aria-hidden="true" /> Cómo llegar</a>
             <a className="pill light" href="tel:+56964179731"><Smartphone size={19} aria-hidden="true" /> Llámanos</a>
