@@ -78,7 +78,7 @@ export default function Home() {
           <div className="purpose-icon" aria-hidden="true"><ShieldCheck size={29} /></div>
           <span>03</span>
           <h2>Valores</h2>
-          <p>En GML SALUD acercamos productos y soluciones de salud a todos nuestros pacientes. A través de nuestra red de farmacias y almacenes farmacéuticos, ofrecemos atención cercana, precios convenientes, convenios de salud y programas de descuentos con beneficios para nuestros clientes.</p>
+          <p>Confianza, innovación y crecimiento sostenible guían cada una de nuestras decisiones.</p>
         </article>
       </section>
 
