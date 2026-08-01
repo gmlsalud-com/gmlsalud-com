@@ -16,7 +16,7 @@ const socialLinks = [
   { network: "Facebook", branch: "Farmacias Alhué", href: "https://www.facebook.com/share/1DbT8CHWd3/?mibextid=wwXIfr", icon: "facebook" },
   { network: "Instagram", branch: "Farmacias Alhué", href: "https://www.instagram.com/farmacia_alhue?igsh=MXV2ZWl5c3R6aWdhZg==", icon: "instagram" },
   { network: "Instagram", branch: "La Línea", href: "https://www.instagram.com/aflalinea?igsh=MTN1M2xsdngyZWljcg==", icon: "instagram" },
-  { network: "Facebook", branch: "Pumanque", href: "https://www.facebook.com/share/1Jco2qwWk/?mibextid=wwXIfr", icon: "facebook" },
+  { network: "Facebook", branch: "Pumanque", href: "https://web.facebook.com/profile.php?id=61574704624882&mibextid=wwXIfr&rdid=y0P0iYVOcuB7PGXz&share_url=https%3A%2F%2Fweb.facebook.com%2Fshare%2F18o61pNHBZ%2F%3Fmibextid%3DwwXIfr%26_rdc%3D1%26_rdr#", icon: "facebook" },
   { network: "Instagram", branch: "Pumanque", href: "https://www.instagram.com/afpumanque?igsh=MTV2dmprYzdxYmN1OQ==", icon: "instagram" },
 ];
 
