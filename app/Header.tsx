@@ -20,7 +20,7 @@ export default function Header() {
         <a href="#consejos" onClick={close}>Consejos de salud</a>
         <a href="#sucursales" onClick={close}>Sucursales</a>
       </nav>
-      <a className="pill dark desktop-cta" href="https://maps.app.goo.gl/SsfUV8vhUzAC77U1A?g_st=iw" target="_blank" rel="noreferrer"><MapPinned size={18} aria-hidden="true" /> Cómo llegar</a>
+      <a className="pill dark desktop-cta" href="https://maps.app.goo.gl/QufCTLZSAeQmfFFS9" target="_blank" rel="noreferrer"><MapPinned size={18} aria-hidden="true" /> Cómo llegar</a>
       <button className="menu" type="button" aria-label={open ? "Cerrar menú" : "Abrir menú"} aria-expanded={open} onClick={() => setOpen(!open)}>{open ? "×" : "☰"}</button>
     </header>
   );
