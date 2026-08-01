@@ -77,7 +77,7 @@ export default function Home() {
           <p>Ser una red referente en salud y bienestar, reconocida por acercar soluciones de calidad, creciendo de manera cercana y sostenible.</p>
         </article>
         <article>
-          <div className="purpose-icon" aria-hidden="true"><ShieldCheck size={27} /></div>
+          <div className="purpose-icon" aria-hidden="true"><ShieldCheck size={29} /></div>
           <span>03</span>
           <h2>Valores</h2>
           <p>En GML SALUD acercamos productos y soluciones de salud a todos nuestros pacientes. A través de nuestra red de farmacias y almacenes farmacéuticos, ofrecemos atención cercana, precios convenientes, convenios de salud y programas de descuentos con beneficios para nuestros clientes.</p>
