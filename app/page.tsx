@@ -1,6 +1,6 @@
 import Locations from "./Locations";
 import Header from "./Header";
-import { Baby, Eye, HeartHandshake, HeartPulse, MapPinned, Pill, PillBottle, ShieldCheck, ShoppingBag, Smartphone, Sparkles } from "lucide-react";
+import { Baby, Eye, HeartHandshake, HeartPulse, MapPinned, Pill, PillBottle, ShieldCheck, ShieldPlus, ShoppingBag, Smartphone, Sparkles } from "lucide-react";
 import { FaFacebookF, FaInstagram, FaWhatsapp } from "react-icons/fa";
 
 const services = [
@@ -65,7 +65,7 @@ export default function Home() {
 
       <section className="purpose-modern" aria-label="Misión, visión y valores">
         <article>
-          <div className="purpose-icon" aria-hidden="true"><HeartPulse size={27} /></div>
+          <div className="purpose-icon" aria-hidden="true"><ShieldPlus size={27} /></div>
           <span>01</span>
           <h2>Misión</h2>
           <p>Mejorar la salud y calidad de vida de las personas, facilitando el acceso a medicamentos, productos y soluciones de bienestar, especialmente en comunas con menor disponibilidad.</p>
