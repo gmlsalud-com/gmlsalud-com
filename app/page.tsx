@@ -33,16 +33,6 @@ export default function Home() {
             <a className="pill teal" href="#sucursales"><MapPinned size={19} aria-hidden="true" /> Cómo llegar</a>
             <a className="pill light" href="tel:+56912345678"><Smartphone size={19} aria-hidden="true" /> Llámanos</a>
           </div>
-          <div className="hero-social" aria-label="Redes sociales de GML Salud">
-            <span>Síguenos</span>
-            <div>
-              {socialLinks.map((social) => (
-                <a className={`social-link ${social.icon}`} href={social.href} target="_blank" rel="noreferrer" aria-label={`${social.network} de ${social.branch}`} title={`${social.network} · ${social.branch}`} key={`${social.network}-${social.branch}`}>
-                  {social.icon === "facebook" ? <FaFacebookF aria-hidden="true" /> : <FaInstagram aria-hidden="true" />}
-                </a>
-              ))}
-            </div>
-          </div>
         </div>
       </section>
 
@@ -100,6 +90,13 @@ export default function Home() {
         <div><h3>Enlaces</h3><a href="#inicio">Inicio</a><a href="#nosotros">Nosotros</a><a href="#servicios">Servicios</a><a href="#sucursales">Sucursales</a></div>
         <div><h3>Información</h3><p>+56 9 1234 5678</p><p>contacto@gmlsalud.cl</p><p>Lun–Vie 09:00–19:30</p></div>
         <div><h3>Nuestras sucursales</h3><p>Alhué</p><p>La Línea, Alhué</p><p>Pumanque</p></div>
+        <div className="footer-social"><h3>Síguenos</h3><div>
+          {socialLinks.map((social) => (
+            <a className="footer-social-link" href={social.href} target="_blank" rel="noreferrer" aria-label={`${social.network} de ${social.branch}`} title={`${social.network} · ${social.branch}`} key={`${social.network}-${social.branch}`}>
+              {social.icon === "facebook" ? <FaFacebookF aria-hidden="true" /> : <FaInstagram aria-hidden="true" />}
+            </a>
+          ))}
+        </div></div>
       </footer>
 
     </main>
