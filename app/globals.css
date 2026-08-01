@@ -61,3 +61,4 @@
 @media(max-width:800px){.care-icon-original{display:none}.service-icon-original{transform:scale(.86);transform-origin:center}.advice-cards img{height:auto;aspect-ratio:2.9/1}}
 .pill svg,.mobile-bar svg{flex:0 0 auto;stroke-width:2.2}
 .mobile-bar a{gap:8px}
+@media(max-width:800px){.hero{background-position:88% center}}
