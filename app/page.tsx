@@ -1,5 +1,6 @@
 import Locations from "./Locations";
 import Header from "./Header";
+import { MapPinned, Smartphone } from "lucide-react";
 
 const services = [
   { icon: 1, title: "Medicamentos", text: "Amplio stock de medicamentos de marca y genéricos." },
@@ -20,8 +21,8 @@ export default function Home() {
           <h1>Cuidamos<br /><em>tu bienestar</em></h1>
           <p>Atención cercana y profesional,<br />siempre que nos necesites.</p>
           <div className="hero-actions">
-            <a className="pill teal" href="#sucursales">⌖ Cómo llegar</a>
-            <a className="pill light" href="tel:+56912345678">⌕ Llámanos</a>
+            <a className="pill teal" href="#sucursales"><MapPinned size={19} aria-hidden="true" /> Cómo llegar</a>
+            <a className="pill light" href="tel:+56912345678"><Smartphone size={19} aria-hidden="true" /> Llámanos</a>
           </div>
         </div>
       </section>
@@ -83,8 +84,8 @@ export default function Home() {
       </footer>
 
       <div className="mobile-bar">
-        <a href="https://maps.google.com/?q=21+de+Mayo+423+Alhue">⌖ Cómo llegar</a>
-        <a href="tel:+56912345678">⌕ Llámanos</a>
+        <a href="https://maps.google.com/?q=21+de+Mayo+423+Alhue"><MapPinned size={18} aria-hidden="true" /> Cómo llegar</a>
+        <a href="tel:+56912345678"><Smartphone size={18} aria-hidden="true" /> Llámanos</a>
       </div>
     </main>
   );

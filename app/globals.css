@@ -59,3 +59,5 @@
 .service-icon-original.icon-1{background-position:-76px -94px}.service-icon-original.icon-2{background-position:-219px -94px}.service-icon-original.icon-3{background-position:-362px -94px}.service-icon-original.icon-4{background-position:-505px -94px}.service-icon-original.icon-5{background-position:-646px -94px}.service-icon-original.icon-6{background-position:-788px -94px}
 .advice-cards img{height:auto;aspect-ratio:2.9/1;object-fit:cover}
 @media(max-width:800px){.care-icon-original{display:none}.service-icon-original{transform:scale(.86);transform-origin:center}.advice-cards img{height:auto;aspect-ratio:2.9/1}}
+.pill svg,.mobile-bar svg{flex:0 0 auto;stroke-width:2.2}
+.mobile-bar a{gap:8px}

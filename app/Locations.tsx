@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { MapPin, MapPinned, Smartphone } from "lucide-react";
 
 const branches = [
   {
@@ -43,7 +44,7 @@ export default function Locations() {
               onClick={() => setSelected(index)}
               aria-pressed={selected === index}
             >
-              <span className="branch-pin" aria-hidden="true">⌖</span>
+              <MapPin className="branch-pin" size={20} aria-hidden="true" />
               <span>
                 <strong>{item.name}</strong>
                 <small>{item.address}</small>
@@ -53,8 +54,8 @@ export default function Locations() {
           ))}
         </div>
         <div className="location-actions">
-          <a className="pill teal" href={`https://www.google.com/maps/dir/?api=1&destination=${query}`} target="_blank" rel="noreferrer">⌖ Cómo llegar</a>
-          <a className="pill light" href={`tel:${phone}`}>⌕ Llámanos</a>
+          <a className="pill teal" href={`https://www.google.com/maps/dir/?api=1&destination=${query}`} target="_blank" rel="noreferrer"><MapPinned size={19} aria-hidden="true" /> Cómo llegar</a>
+          <a className="pill light" href={`tel:${phone}`}><Smartphone size={19} aria-hidden="true" /> Llámanos</a>
         </div>
       </div>
       <div className="real-map">

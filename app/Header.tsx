@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { MapPinned } from "lucide-react";
 
 export default function Header() {
   const [open, setOpen] = useState(false);
@@ -19,7 +20,7 @@ export default function Header() {
         <a href="#consejos" onClick={close}>Consejos de salud</a>
         <a href="#sucursales" onClick={close}>Sucursales</a>
       </nav>
-      <a className="pill dark desktop-cta" href="#sucursales">⌖ Cómo llegar</a>
+      <a className="pill dark desktop-cta" href="#sucursales"><MapPinned size={18} aria-hidden="true" /> Cómo llegar</a>
       <button className="menu" type="button" aria-label={open ? "Cerrar menú" : "Abrir menú"} aria-expanded={open} onClick={() => setOpen(!open)}>{open ? "×" : "☰"}</button>
     </header>
   );
