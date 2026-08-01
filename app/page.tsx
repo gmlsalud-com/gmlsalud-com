@@ -2,12 +2,12 @@ import Locations from "./Locations";
 import Header from "./Header";
 
 const services = [
-  { icon: "◇", title: "Medicamentos", text: "Amplio stock de medicamentos de marca y genéricos." },
-  { icon: "♡", title: "Orientación farmacéutica", text: "Te asesoramos en el uso correcto de tus medicamentos." },
-  { icon: "♧", title: "Control de presión arterial", text: "Medición gratuita y seguimiento." },
-  { icon: "◫", title: "Vitaminas y suplementos", text: "Encuentra productos para tu bienestar diario." },
-  { icon: "☺", title: "Productos infantiles", text: "Todo lo que tu bebé necesita, en un solo lugar." },
-  { icon: "▣", title: "Cuidado personal", text: "Productos de higiene, belleza y cuidado personal." },
+  { icon: 1, title: "Medicamentos", text: "Amplio stock de medicamentos de marca y genéricos." },
+  { icon: 2, title: "Orientación farmacéutica", text: "Te asesoramos en el uso correcto de tus medicamentos." },
+  { icon: 3, title: "Control de presión arterial", text: "Medición gratuita y seguimiento." },
+  { icon: 4, title: "Vitaminas y suplementos", text: "Encuentra productos para tu bienestar diario." },
+  { icon: 5, title: "Productos infantiles", text: "Todo lo que tu bebé necesita, en un solo lugar." },
+  { icon: 6, title: "Cuidado personal", text: "Productos de higiene, belleza y cuidado personal." },
 ];
 
 export default function Home() {
@@ -32,13 +32,13 @@ export default function Home() {
           <h2>Más cerca de las personas</h2>
           <p>En GML Salud trabajamos cada día para entregar un servicio farmacéutico de calidad, con orientación profesional y productos confiables para tu salud y la de tu familia.</p>
         </div>
-        <div className="care-icon" aria-hidden="true"><span>+</span>♡</div>
+        <div className="care-icon-original" role="img" aria-label="Manos cuidando un corazón con símbolo de salud" />
       </section>
 
       <section className="services-live" id="servicios">
         <div className="services-heading"><span className="eyebrow">Nuestros servicios</span><h2>Estamos para ayudarte</h2></div>
         <div className="services-list">
-          {services.map((service) => <article key={service.title}><i aria-hidden="true">{service.icon}</i><h3>{service.title}</h3><p>{service.text}</p></article>)}
+          {services.map((service) => <article key={service.title}><i className={`service-icon-original icon-${service.icon}`} aria-hidden="true" /><h3>{service.title}</h3><p>{service.text}</p></article>)}
         </div>
       </section>
 
